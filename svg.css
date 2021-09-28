@@ -1,0 +1,70 @@
+body {
+    font-font: sans-serif;
+}
+
+.trunk {
+    fill: #cc9966;
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+.pine {
+    fill: #66cc6f;
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+.star {
+    fill: #ccc266;
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+.planet {
+    fill: #cc7066;
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+.ring {
+    fill: none;
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+.mountain {
+    fill: #7466cc;
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+.snow {
+    fill: #fff;
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+.moon {
+    fill: #f7f7c8;
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+.adventure {
+    fill: #66b9cc;
+    font-weight: bold;
+}
+
+line {
+    stroke: #cecdd4;
+    stroke-width: 3;
+}
+
+text {
+    fill: #cecdd4;
+    font-size: 60pt;
+}
+
+svg {
+    background: #394670;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+    <link rel="stylesheet" href="svg.css">
+</head>
+<body>
+<div>
+    <a href="index.html">Home Page</a>
+    <br>
+    <a href="introduction.html">Introduction Page</a>
+    <br>
+    <a href="big5.html">Big 5 Page</a>
+    <br>
+    <a href="svg.html">SVG Page</a>
+</div>
+<div>
+    <H1>Be Creative and Draw Something with SVG!</H1>
+    <H2>Use at least 4 different SVG shapes/primitives.</H2>
+</div>
+<div>
+    <svg height="600" width="800">
+        <!--planet-->
+        <circle cx="650" cy="70" r="50" class="planet"></circle>
+        <path d="M 598,-110 a70,20 0 1,0 98,0" class="ring" transform="rotate(15)"></path>
+        <!--moon-->
+        <circle cx="250" cy="220" r="80" class="moon"></circle>
+        <!--left tree-->
+        <rect x="550" y="350" width="20" height="100" class="trunk"></rect>
+        <polygon points="520,350 560,300 600,350" class="pine"></polygon>
+        <polygon points="520,320 560,280 600,320" class="pine"></polygon>
+        <polygon points="520,290 560,250 600,290" class="pine"></polygon>
+        <!--right tree-->
+        <rect x="620" y="380" width="15" height="70" class="trunk"></rect>
+        <polygon points="600,380 630,350 660,380" class="pine"></polygon>
+        <polygon points="600,360 630,330 660,360" class="pine"></polygon>
+        <polygon points="600,340 630,310 660,340" class="pine"></polygon>
+        <!--left mountain-->
+        <polygon points="20,450 150,200 320,450" class="mountain"></polygon>
+        <polygon points="124,250 150,200 184,250" class="snow"></polygon>
+        <!--right mountain-->
+        <polygon points="180,450 320,150 480,450" class="mountain"></polygon>
+        <polygon points="287,220 320,150 358,220" class="snow"></polygon>
+        <!--stars-->
+        <circle cx="250" cy="100" r="5" class="star"></circle>
+        <circle cx="360" cy="50" r="5" class="star"></circle>
+        <circle cx="150" cy="30" r="5" class="star"></circle>
+        <circle cx="450" cy="80" r="5" class="star"></circle>
+        <circle cx="430" cy="250" r="5" class="star"></circle>
+        <circle cx="550" cy="200" r="5" class="star"></circle>
+        <circle cx="730" cy="350" r="5" class="star"></circle>
+        <circle cx="50" cy="90" r="5" class="star"></circle>
+        <circle cx="75" cy="300" r="5" class="star"></circle>
+        <circle cx="89" cy="200" r="5" class="star"></circle>
+
+        <!--adventure is out there-->
+        <text x="20" y="550" class="adventure">Adventure </text>
+        <text x="410" y="550">is out there.</text>
+    </svg>
+</div>
+</body>
+</html>
