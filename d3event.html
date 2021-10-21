@@ -22,35 +22,50 @@
     <a href="d3event.html">D3 Event Page</a>
 </div>
 <script type="text/javascript">
+    // get the body tag
     let body = d3.select("body");
 
+    // add span
     body.append("span")
         .attr("id", "span");
 
+    // get the created span tag
     let span = d3.select("#span");
 
+    // when the mouse is moving in the span,
+    // display the x and y position
     span.on("mousemove", function(d) {
         div3.text("Mouse X: " + d3.pointer(d)[0] + ", Y: " + d3.pointer(d)[1])
     });
 
+    // add the twitter image to the span
     span.append("img")
         .attr("src", "img/twitter.png")
         .attr("width", 100)
         .attr("height", 100)
         .attr("id", "twitter")
+        // when the mouse enters the image, change
+        // the opacity.
         .on("mouseenter", function() {
             div1.text("In: Twitter");
             d3.select("#twitter")
                 .style("opacity", 0.5);
         })
+        // when the mouse leaves the image,
+        // revert to original opacity
         .on("mouseleave", function() {
             div2.text("Out: Twitter")
             d3.select("#twitter")
                 .style("opacity", 1.0);
         })
+        // when you double click on the image
+        // go to twitter.com
         .on("dblclick", function() {
             window.open("https://twitter.com", "_blank")
         })
+        // when you press down on the mouse
+        // change the opacity, make the image
+        // larger, and rotate the image
         .on("mousedown", function() {
             d3.select("#twitter")
                 .style("opacity", 0.75)
@@ -58,6 +73,10 @@
                 .attr("width", 150)
                 .attr("height", 150);
         })
+        // when you release the mouse button
+        // revert the opacity back to 0.5,
+        // revert to original image rotation,
+        // and revert to original size
         .on("mouseup", function() {
             d3.select("#twitter")
                 .style("opacity", 0.5)
@@ -66,24 +85,34 @@
                 .attr("height", 100)
         });
 
+    // add the facebook image to the span
     span.append("img")
         .attr("src", "img/facebook.png")
         .attr("width", 100)
         .attr("height", 100)
         .attr("id", "facebook")
+        // when the mouse enters the image, change
+        // the opacity.
         .on("mouseenter", function() {
             div1.text("In: Facebook");
             d3.select("#facebook")
                 .style("opacity", 0.5);
         })
+        // when the mouse leaves the image,
+        // revert to original opacity
         .on("mouseleave", function() {
             div2.text("Out: Facebook")
             d3.select("#facebook")
                 .style("opacity", 1.0);
         })
+        // when you double click on the image
+        // go to facebook.com
         .on("dblclick", function() {
             window.open("https://facebook.com", "_blank")
         })
+        // when you press down on the mouse
+        // change the opacity, make the image
+        // larger, and rotate the image
         .on("mousedown", function() {
             d3.select("#facebook")
                 .style("opacity", 0.75)
@@ -91,6 +120,10 @@
                 .attr("width", 150)
                 .attr("height", 150);
         })
+        // when you release the mouse button
+        // revert the opacity back to 0.5,
+        // revert to original image rotation,
+        // and revert to original size
         .on("mouseup", function() {
             d3.select("#facebook")
                 .style("opacity", 0.5)
@@ -99,24 +132,34 @@
                 .attr("height", 100)
         });
 
+    // add the reddit image to the span
     span.append("img")
         .attr("src", "img/reddit.png")
         .attr("width", 100)
         .attr("height", 100)
         .attr("id", "reddit")
+        // when the mouse enters the image, change
+        // the opacity.
         .on("mouseenter", function() {
             div1.text("In: Reddit");
             d3.select("#reddit")
                 .style("opacity", 0.5);
         })
+        // when the mouse leaves the image,
+        // revert to original opacity
         .on("mouseleave", function() {
             div2.text("Out: Reddit")
             d3.select("#reddit")
                 .style("opacity", 1.0);
         })
+        // when you double click on the image
+        // go to reddit.com
         .on("dblclick", function() {
             window.open("https://reddit.com", "_blank")
         })
+        // when you press down on the mouse
+        // change the opacity, make the image
+        // larger, and rotate the image
         .on("mousedown", function() {
             d3.select("#reddit")
                 .style("opacity", 0.75)
@@ -124,6 +167,10 @@
                 .attr("width", 150)
                 .attr("height", 150);
         })
+        // when you release the mouse button
+        // revert the opacity back to 0.5,
+        // revert to original image rotation,
+        // and revert to original size
         .on("mouseup", function() {
             d3.select("#reddit")
                 .style("opacity", 0.5)
@@ -132,24 +179,34 @@
                 .attr("height", 100)
         });
 
+    // add the linkedin image to the span
     span.append("img")
         .attr("src", "img/linkedin.png")
         .attr("width", 100)
         .attr("height", 100)
         .attr("id", "linkedin")
+        // when the mouse enters the image, change
+        // the opacity.
         .on("mouseenter", function() {
             div1.text("In: LinkedIn");
             d3.select("#linkedin")
                 .style("opacity", 0.5);
         })
+        // when the mouse leaves the image,
+        // revert to original opacity
         .on("mouseleave", function() {
             div2.text("Out: LinkedIn")
             d3.select("#linkedin")
                 .style("opacity", 1.0);
         })
+        // when you double click on the image
+        // go to linkedin.com
         .on("dblclick", function() {
             window.open("https://linkedin.com", "_blank")
         })
+        // when you press down on the mouse
+        // change the opacity, make the image
+        // larger, and rotate the image
         .on("mousedown", function() {
             d3.select("#linkedin")
                 .style("opacity", 0.75)
@@ -157,6 +214,10 @@
                 .attr("width", 150)
                 .attr("height", 150);
         })
+        // when you release the mouse button
+        // revert the opacity back to 0.5,
+        // revert to original image rotation,
+        // and revert to original size
         .on("mouseup", function() {
             d3.select("#linkedin")
                 .style("opacity", 0.5)
@@ -165,21 +226,28 @@
                 .attr("height", 100)
         });
 
+    // add the instagram image to the span
     span.append("img")
         .attr("src", "img/instagram.jpg")
         .attr("width", 100)
         .attr("height", 100)
         .attr("id", "instagram")
+        // when the mouse enters the image, change
+        // the opacity.
         .on("mouseenter", function() {
             div1.text("In: Instagram");
             d3.select("#instagram")
                 .style("opacity", 0.5);
         })
+        // when the mouse leaves the image,
+        // revert to original opacity
         .on("mouseleave", function() {
             div2.text("Out: Instagram")
             d3.select("#instagram")
                 .style("opacity", 1.0);
         })
+        // when you double click on the image
+        // go to instagram.com
         .on("dblclick", function() {
             window.open("https://instagram.com", "_blank")
         })
@@ -190,6 +258,10 @@
                 .attr("width", 150)
                 .attr("height", 150);
         })
+        // when you release the mouse button
+        // revert the opacity back to 0.5,
+        // revert to original image rotation,
+        // and revert to original size
         .on("mouseup", function() {
             d3.select("#instagram")
                 .style("opacity", 0.5)
@@ -198,27 +270,36 @@
                 .attr("height", 100)
         });
 
+    // create div1
     body.append("div")
         .attr("id", "div1");
 
+    // create div2
     body.append("div")
         .attr("id", "div2");
 
+    // create div3
     body.append("div")
         .attr("id", "div3");
 
+    // set div1
     let div1 = d3.select("#div1");
 
+    // set div2
     let div2 = d3.select("#div2");
 
+    // set div3
     let div3 = d3.select("#div3");
 
+    // set the text for div1
     div1.append("p")
         .text("In:");
 
+    // set the text for div2
     div2.append("p")
         .text("Out:");
 
+    // set the text for div3
     div3.append("p")
         .text("Mouse X: , Y:");
 </script>
