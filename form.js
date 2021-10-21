@@ -32,7 +32,7 @@ function checkValidation(){
     if (document.getElementById("warnings") !== null){
         document.getElementById("form").removeChild(document.getElementById("warnings"));
     }
-    let usernameRegex = RegExp("([a-z]|[0-9]){4,12}$");
+    let usernameRegex = RegExp("^([a-z]|[0-9]){4,12}$");
     let emailRegex = RegExp(".*@.*(\\.edu|\\.org|\\.com|\\.net)$");
     let phoneRegex = RegExp("(^[0-9]{3}-[0-9]{3}-[0-9]{4}$)");
     let passwordRegex = RegExp(".*(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*\\W).*");
