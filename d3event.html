@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>D3 Event</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
 <div>
@@ -20,5 +21,206 @@
     <br>
     <a href="d3event.html">D3 Event Page</a>
 </div>
+<script type="text/javascript">
+    let body = d3.select("body");
+
+    body.append("span")
+        .attr("id", "span");
+
+    let span = d3.select("#span");
+
+    span.on("mousemove", function(d) {
+        div3.text("Mouse X: " + d3.pointer(d)[0] + ", Y: " + d3.pointer(d)[1])
+    });
+
+    span.append("img")
+        .attr("src", "img/twitter.png")
+        .attr("width", 100)
+        .attr("height", 100)
+        .attr("id", "twitter")
+        .on("mouseenter", function() {
+            div1.text("In: Twitter");
+            d3.select("#twitter")
+                .style("opacity", 0.5);
+        })
+        .on("mouseleave", function() {
+            div2.text("Out: Twitter")
+            d3.select("#twitter")
+                .style("opacity", 1.0);
+        })
+        .on("dblclick", function() {
+            window.open("https://twitter.com", "_blank")
+        })
+        .on("mousedown", function() {
+            d3.select("#twitter")
+                .style("opacity", 0.75)
+                .style("transform", "rotate(180deg)")
+                .attr("width", 150)
+                .attr("height", 150);
+        })
+        .on("mouseup", function() {
+            d3.select("#twitter")
+                .style("opacity", 0.5)
+                .style("transform", "rotate(360deg)")
+                .attr("width", 100)
+                .attr("height", 100)
+        });
+
+    span.append("img")
+        .attr("src", "img/facebook.png")
+        .attr("width", 100)
+        .attr("height", 100)
+        .attr("id", "facebook")
+        .on("mouseenter", function() {
+            div1.text("In: Facebook");
+            d3.select("#facebook")
+                .style("opacity", 0.5);
+        })
+        .on("mouseleave", function() {
+            div2.text("Out: Facebook")
+            d3.select("#facebook")
+                .style("opacity", 1.0);
+        })
+        .on("dblclick", function() {
+            window.open("https://facebook.com", "_blank")
+        })
+        .on("mousedown", function() {
+            d3.select("#facebook")
+                .style("opacity", 0.75)
+                .style("transform", "rotate(180deg)")
+                .attr("width", 150)
+                .attr("height", 150);
+        })
+        .on("mouseup", function() {
+            d3.select("#facebook")
+                .style("opacity", 0.5)
+                .style("transform", "rotate(360deg)")
+                .attr("width", 100)
+                .attr("height", 100)
+        });
+
+    span.append("img")
+        .attr("src", "img/reddit.png")
+        .attr("width", 100)
+        .attr("height", 100)
+        .attr("id", "reddit")
+        .on("mouseenter", function() {
+            div1.text("In: Reddit");
+            d3.select("#reddit")
+                .style("opacity", 0.5);
+        })
+        .on("mouseleave", function() {
+            div2.text("Out: Reddit")
+            d3.select("#reddit")
+                .style("opacity", 1.0);
+        })
+        .on("dblclick", function() {
+            window.open("https://reddit.com", "_blank")
+        })
+        .on("mousedown", function() {
+            d3.select("#reddit")
+                .style("opacity", 0.75)
+                .style("transform", "rotate(180deg)")
+                .attr("width", 150)
+                .attr("height", 150);
+        })
+        .on("mouseup", function() {
+            d3.select("#reddit")
+                .style("opacity", 0.5)
+                .style("transform", "rotate(360deg)")
+                .attr("width", 100)
+                .attr("height", 100)
+        });
+
+    span.append("img")
+        .attr("src", "img/linkedin.png")
+        .attr("width", 100)
+        .attr("height", 100)
+        .attr("id", "linkedin")
+        .on("mouseenter", function() {
+            div1.text("In: LinkedIn");
+            d3.select("#linkedin")
+                .style("opacity", 0.5);
+        })
+        .on("mouseleave", function() {
+            div2.text("Out: LinkedIn")
+            d3.select("#linkedin")
+                .style("opacity", 1.0);
+        })
+        .on("dblclick", function() {
+            window.open("https://linkedin.com", "_blank")
+        })
+        .on("mousedown", function() {
+            d3.select("#linkedin")
+                .style("opacity", 0.75)
+                .style("transform", "rotate(180deg)")
+                .attr("width", 150)
+                .attr("height", 150);
+        })
+        .on("mouseup", function() {
+            d3.select("#linkedin")
+                .style("opacity", 0.5)
+                .style("transform", "rotate(360deg)")
+                .attr("width", 100)
+                .attr("height", 100)
+        });
+
+    span.append("img")
+        .attr("src", "img/instagram.jpg")
+        .attr("width", 100)
+        .attr("height", 100)
+        .attr("id", "instagram")
+        .on("mouseenter", function() {
+            div1.text("In: Instagram");
+            d3.select("#instagram")
+                .style("opacity", 0.5);
+        })
+        .on("mouseleave", function() {
+            div2.text("Out: Instagram")
+            d3.select("#instagram")
+                .style("opacity", 1.0);
+        })
+        .on("dblclick", function() {
+            window.open("https://instagram.com", "_blank")
+        })
+        .on("mousedown", function() {
+            d3.select("#instagram")
+                .style("opacity", 0.75)
+                .style("transform", "rotate(180deg)")
+                .attr("width", 150)
+                .attr("height", 150);
+        })
+        .on("mouseup", function() {
+            d3.select("#instagram")
+                .style("opacity", 0.5)
+                .style("transform", "rotate(360deg)")
+                .attr("width", 100)
+                .attr("height", 100)
+        });
+
+    body.append("div")
+        .attr("id", "div1");
+
+    body.append("div")
+        .attr("id", "div2");
+
+    body.append("div")
+        .attr("id", "div3");
+
+    let div1 = d3.select("#div1");
+
+    let div2 = d3.select("#div2");
+
+    let div3 = d3.select("#div3");
+
+    div1.append("p")
+        .text("In:");
+
+    div2.append("p")
+        .text("Out:");
+
+    div3.append("p")
+        .text("Mouse X: , Y:");
+</script>
 </body>
 </html>
