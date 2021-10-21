@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<link rel="stylesheet" href="form.css">
+<script src="form.js" defer></script>
+<body>
+<div>
+    <a href="index.html">Home Page</a>
+    <br>
+    <a href="introduction.html">Introduction Page</a>
+    <br>
+    <a href="big5.html">Big 5 Page</a>
+    <br>
+    <a href="svg.html">SVG Page</a>
+    <br>
+    <a href="calculator.html">Calculator Page</a>
+    <br>
+    <a href="form.html">Form Page</a>
+    <br>
+    <a href="d3event.html">D3 Event Page</a>
+</div>
+<h1>Simple Signup Page Using Forms</h1>
+<div class="form" id="form">
+    <form id="signup">
+        <table>
+            <tr>
+                <td class="label"><label for="username">Username:</label></td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="email">Email:</label></td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="phone">Phone Number:</label></td>
+                <td><input type="text" id="phone"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="password">Enter Password:</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="confPassword">Confirm Password:</label></td>
+                <td><input type="password" id="confPassword"></td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label>Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" id="female"> <label for="female">Female</label>
+                    <input type="radio" id="male"> <label for="male">Male</label>
+                    <input type="radio" id="other"> <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label"><label>Birthday:</label></td>
+                <td>
+                    <select id="month" size="1">
+                        <option value=""></option>
+                        <option value="jan">January</option>
+                        <option value="feb">February</option>
+                        <option value="mar">March</option>
+                        <option value="apr">April</option>
+                        <option value="may">May</option>
+                        <option value="jun">June</option>
+                        <option value="jul">July</option>
+                        <option value="aug">August</option>
+                        <option value="sept">September</option>
+                        <option value="oct">October</option>
+                        <option value="nov">November</option>
+                        <option value="dec">December</option>
+                    </select>
+                    <select id="day" size="1"></select>
+                    <select id="year" size="1"></select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label>Favorite Music Genre:</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="pop"> <label for="pop">Pop</label>
+                    <input type="checkbox" id="hiphop"> <label for="hiphop">Hiphop</label>
+                    <input type="checkbox" id="jazz"> <label for="jazz">Jazz</label>
+                    <input type="checkbox" id="rock"> <label for="rock">Rock</label>
+                    <input type="checkbox" id="classical"> <label for="classical">Classical Music</label>
+                    <input type="checkbox" id="country"> <label for="country">Country</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="submit" value="Submit" onclick="checkValidation()">
+                    <input type="reset" is="clear" value="Clear" onclick="clearAll()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

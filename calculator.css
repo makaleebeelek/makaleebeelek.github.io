@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid black;
+    text-align:center;
+}
+
+th {
+    background: rgba(255, 150, 0, 1);
+    padding-left: 20pt;
+    padding-right: 20pt;
+
+}
+
+.operator {
+    background: rgba(255, 150, 0, 0.2);
+
+}
