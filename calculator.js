@@ -113,18 +113,16 @@ function displayResultTable(array){
     let count = 0;
     // get the minimum, maximum, average, and total
     for (let i = 0; i < array.length; i++) {
-        for (let j = 0; j < array[i].length; j++){
-            let num = parseInt(array[i][j]);
-            if(!isNaN(num)){
-                count++;
-                if (min > num){
-                    min = num;
-                }
-                if (max < num){
-                    max = num;
-                }
-                total += num;
+        let num = parseInt(array[i][3]);
+        if(!isNaN(num)){
+            count++;
+            if (min > num){
+                min = num;
             }
+            if (max < num){
+                max = num;
+            }
+            total += num;
         }
     }
     let average = total / count;
